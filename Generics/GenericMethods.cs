@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class GenericMethods where T : BaseClass, new()
+    internal class GenericMethods<T> where T : BaseClass, new()
     {
         public static void Swap<T>(ref T x, ref T y)
         {

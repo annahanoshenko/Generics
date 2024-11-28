@@ -8,7 +8,7 @@ namespace MyList
 {
     internal class MyList<T>
     {
-        private T[] _array = Array.Empty<T>(); 
+        private T[] _array = Array.Empty<T>();
         public T this[int index]
         {
             get
@@ -21,7 +21,7 @@ namespace MyList
             }
         }
 
-        public int Count { get { return _array.Length; } }  
+        public int Count { get { return _array.Length; } }
 
         public void Add(T value)
         {
@@ -32,7 +32,8 @@ namespace MyList
                 newArray[i] = _array[i];
             }
             newArray[_array.Length] = value;
-           
-             _array = newArray;
+
+            _array = newArray;
         }
+    }
 }
